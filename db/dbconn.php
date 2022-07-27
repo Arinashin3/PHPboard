@@ -7,6 +7,5 @@
 
     // DB 접속
     $conn = mysqli_connect($serverhost, $admin, $password, $dbname);
-    $conn = set_charset("utf-8");
 ?>
     

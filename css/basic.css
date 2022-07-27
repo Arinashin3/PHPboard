@@ -106,7 +106,7 @@ li:hover {
     padding-left: 30px;
     padding-top: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 .board_list {
     position: fixed;
@@ -116,13 +116,14 @@ li:hover {
     height: 100%;
     text-align: center;
     background-color: rgb(175, 189, 219);
+    list-style: none;
 }
 .board_main {
     padding-top: 70px;
     padding-left: 170px;
 }
 .board_title {
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 30px;
     padding-left: 70px;
 }

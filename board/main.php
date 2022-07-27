@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" type="images/png" href="http://germy.net/img/logo/Glogo.png">
-        <link rel="stylesheet" type="text/css" href="../css/basic.css">
+        <link rel="stylesheet" type="text/css" href="/css/basic.css">
         <title>Germy - 게시판</title>
     </head>
     <body>
@@ -28,8 +28,10 @@
                     </tr>
                 </thead>
 <?php
-    $sql = query("select * from board order by idx desc limit 0,10");
-    while ($board = $sql->fetch_array()) {
+    include "/db/dbconn.php";
+    $result = "select * from board order by idx desc limit 0,10";
+    $sql = mysqli_query($conn, $result);
+    while ($board = mysqli_fetch_array($sql)) {
         $title = $board["title"];
         if (strlen($title)>30) {
             $title = str_replace($board["title"], mb_substr($board["title"],0,30,"utf-8")."...",$board["title"]);
@@ -38,7 +40,7 @@
                     <tr>
                         <td width="70px"><?php echo $board['idx']; ?></td>
                         <td width="500px"><?php echo $title; ?></td>
-                        <td width="120px"><?php echo $board['name']; ?></td>
+                        <td width="120px"><?php echo $board['id']; ?></td>
                         <td width="100px"><?php echo $board['date']; ?></td>
                         <td width="100px"><?php echo $board['hit']; ?></td>
                         <td width="100px"><?php echo $board['thumbup']; ?></td>
