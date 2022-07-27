@@ -1,3 +1,14 @@
 * {
     margin: 0;
 }
+
+/* 로그인 화면 */
+.loginbox {
+    box-sizing: border-box;
+    width: 700px;
+    border: solid rgb(101, 101, 136);
+    border-radius: 20px;
+    padding: 15px 30px 40px;
+    margin: 10% auto auto auto;
+    text-align: center;
+}
