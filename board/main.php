@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="icon" type="images/png" href="http://germy.net/img/logo/Glogo.png">
+        <link rel="icon" type="images/png" href="/img/logo/Glogo.png">
         <link rel="stylesheet" type="text/css" href="/css/basic.css">
         <title>Germy - 게시판</title>
     </head>
