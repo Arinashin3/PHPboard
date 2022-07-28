@@ -13,6 +13,7 @@
         <ul class="board_list">
             <li>자유게시판</li>
             <li>고양이</li>
+	    <li>애옹ㅋㅋ</li>
         </ul>
         <div class="board_main">
             <h2 class="board_title">자유게시판</h2>

@@ -21,7 +21,7 @@
             if (isset($_SESSION['id'])) {
 ?>              <script>
                     alert("로그인되었습니다.");
-                    location.replace("http://germy.net/board/board.php");
+                    location.replace("http://germy.net/board/main.php");
                 </script>
 <?php       }
             else {
